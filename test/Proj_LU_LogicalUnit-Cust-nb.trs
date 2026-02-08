@@ -1,0 +1,34 @@
+-------------------------------------------------------
+File Type: IFS Foundation Translation File
+Type version: 10.00
+-------------------------------------------------------
+Module: PROJ
+Language: nb
+Culture: nb-NO
+Layer: Cust
+Main Type: LU
+Sub Type: Logical Unit
+Content: 
+-------------------------------------------------------
+CS:ActivityEstimate^LU
+	CS:ACTIVITY_ESTIMATE^LU
+		CS:C_ACTUAL_COST^LU
+			P:C Actual Cost^
+			A:Prompt^Faktisk kostnad^
+		CE:
+		CS:C_ACTUAL_REVENUE^LU
+			P:C Actual Revenue^
+			A:Prompt^Faktisk inntekt^
+		CE:
+	CE:
+	CS:ACTIVITY_ESTIMATE_MAIN^LU
+		CS:C_ACTUAL_COST^LU
+			P:C Actual Cost^
+			A:Prompt^Faktisk kostnad^
+		CE:
+		CS:C_ACTUAL_REVENUE^LU
+			P:C Actual Revenue^
+			A:Prompt^Faktisk inntekt^
+		CE:
+	CE:
+CE:

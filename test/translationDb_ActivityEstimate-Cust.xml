@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TranslatableResources type="LU" module="PROJ" version="1.0" layer="Cust" xmlns="types.scan.translation.fnd.ifsworld.com">
+   <TranslatableResource type="Logical Unit" ID="ActivityEstimate" name="ActivityEstimate">
+      <Text><![CDATA[Activity Estimate]]></Text>
+      <Resource subtype="View" ID="ActivityEstimate.ACTIVITY_ESTIMATE" control="ACTIVITY_ESTIMATE">
+         <Text><![CDATA[Activity Estimate]]></Text>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.ACTIVITY_SEQ" control="ACTIVITY_SEQ">
+            <Text><![CDATA[Activity seq]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.PROJECT_COST_ELEMENT" control="PROJECT_COST_ELEMENT">
+            <Text><![CDATA[Project Cost Element]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.ESTIMATED" control="ESTIMATED">
+            <Text><![CDATA[Estimated]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.ESTIMATE_TO_COMPLETE" control="ESTIMATE_TO_COMPLETE">
+            <Text><![CDATA[Estimate To Complete]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.CREATE_BY" control="CREATE_BY">
+            <Text><![CDATA[Create By]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.DATE_CREATE" control="DATE_CREATE">
+            <Text><![CDATA[Date Create]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.MODIFIED_BY" control="MODIFIED_BY">
+            <Text><![CDATA[Modified By]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.DATE_MODIFIED" control="DATE_MODIFIED">
+            <Text><![CDATA[Date Modified]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.ESTIMATED_HOURS" control="ESTIMATED_HOURS">
+            <Text><![CDATA[Estimated Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.ESTIMATED_REVENUE" control="ESTIMATED_REVENUE">
+            <Text><![CDATA[Estimated Revenue]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.C_ACTUAL_COST" control="C_ACTUAL_COST">
+            <Text><![CDATA[C Actual Cost]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE.C_ACTUAL_REVENUE" control="C_ACTUAL_REVENUE">
+            <Text><![CDATA[C Actual Revenue]]></Text>
+         </Resource>
+      </Resource>
+      <Resource subtype="View" ID="ActivityEstimate.ACTIVITY_ESTIMATE_MAIN" control="ACTIVITY_ESTIMATE_MAIN">
+         <Text><![CDATA[Activity Estimate Main]]></Text>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE_MAIN.C_ACTUAL_COST" control="C_ACTUAL_COST">
+            <Text><![CDATA[C Actual Cost]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityEstimate.ACTIVITY_ESTIMATE_MAIN.C_ACTUAL_REVENUE" control="C_ACTUAL_REVENUE">
+            <Text><![CDATA[C Actual Revenue]]></Text>
+         </Resource>
+      </Resource>
+   </TranslatableResource>
+</TranslatableResources>

@@ -1,0 +1,29 @@
+-------------------------------------------------------
+File Type: IFS Foundation Language File
+Type version: 10.00
+-------------------------------------------------------
+Module: PROJ
+Layer: Cust
+Main Type: LU
+Sub Type: Logical Unit
+Content: 
+-------------------------------------------------------
+CS:ActivityEstimate^LU^Logical Unit^N^N
+	A:Prompt^Activity Estimate^
+	CS:ACTIVITY_ESTIMATE^LU^View^N^N
+		CS:C_ACTUAL_COST^LU^Column^N^N
+			A:Prompt^C Actual Cost^
+		CE:
+		CS:C_ACTUAL_REVENUE^LU^Column^N^N
+			A:Prompt^C Actual Revenue^
+		CE:
+	CE:
+	CS:ACTIVITY_ESTIMATE_MAIN^LU^View^N^N
+		CS:C_ACTUAL_COST^LU^Column^N^N
+			A:Prompt^C Actual Cost^
+		CE:
+		CS:C_ACTUAL_REVENUE^LU^Column^N^N
+			A:Prompt^C Actual Revenue^
+		CE:
+	CE:
+CE:

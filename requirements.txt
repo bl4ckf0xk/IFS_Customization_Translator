@@ -1,0 +1,5 @@
+# Minimal dependencies for running tests
+# Install: pip install -r requirements.txt
+pytest>=7.0
+
+# For AI translation backends (Groq, Google), see requirements-optional.txt

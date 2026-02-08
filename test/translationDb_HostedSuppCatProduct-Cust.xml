@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TranslatableResources type="LU" module="ESSPRO" version="1.0" layer="Cust" xmlns="types.scan.translation.fnd.ifsworld.com">
+   <TranslatableResource type="Logical Unit" ID="HostedSuppCatProduct" name="HostedSuppCatProduct">
+      <Text><![CDATA[Hosted Supplier Catalog Product Line]]></Text>
+      <Resource subtype="View" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT" control="HOSTED_SUPP_CAT_PRODUCT">
+         <Text><![CDATA[Hosted Supplier Catalog Product Line]]></Text>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.VENDOR_NO" control="VENDOR_NO">
+            <Text><![CDATA[Supplier]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.CATALOG_ID" control="CATALOG_ID">
+            <Text><![CDATA[Catalog ID]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.REVISION_NO" control="REVISION_NO">
+            <Text><![CDATA[Revision No]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.LINE_NO" control="LINE_NO">
+            <Text><![CDATA[Line No]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.VENDOR_PART_NO" control="VENDOR_PART_NO">
+            <Text><![CDATA[Supplier''s Part No]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.VENDOR_PART_DESCRIPTION" control="VENDOR_PART_DESCRIPTION">
+            <Text><![CDATA[Supplier''s Part Description]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.BUY_UNIT_MEAS" control="BUY_UNIT_MEAS">
+            <Text><![CDATA[Buy Unit Meas]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.FBUY_UNIT_PRICE" control="FBUY_UNIT_PRICE">
+            <Text><![CDATA[Fbuy Unit Price]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.ACTIVE" control="ACTIVE">
+            <Text><![CDATA[Active]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.ACTIVE_DB" control="ACTIVE_DB">
+            <Text><![CDATA[Active]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.PRODUCT_CATEGORY" control="PRODUCT_CATEGORY">
+            <Text><![CDATA[Supplier''s Product Category]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.LEAD_TIME" control="LEAD_TIME">
+            <Text><![CDATA[Lead Time]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.IMAGE_URL" control="IMAGE_URL">
+            <Text><![CDATA[Image Url]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.MANUFACTURER_PART_NO" control="MANUFACTURER_PART_NO">
+            <Text><![CDATA[Manufacturer Part No]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.MANUFACTURER_NAME" control="MANUFACTURER_NAME">
+            <Text><![CDATA[Manufacturer Name]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_BRANCH_NO" control="C_BRANCH_NO">
+            <Text><![CDATA[Branch No]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_EAN" control="C_EAN">
+            <Text><![CDATA[EAN]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_TECHNICAL_DESCRIPTION" control="C_TECHNICAL_DESCRIPTION">
+            <Text><![CDATA[Technical Description]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_SALES_UOM" control="C_SALES_UOM">
+            <Text><![CDATA[Sales UOM]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_PACKAGE_MEASUREMENT" control="C_PACKAGE_MEASUREMENT">
+            <Text><![CDATA[Package Measurement]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_MINORDERQTY" control="C_MINORDERQTY">
+            <Text><![CDATA[Min Order Qty]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_LISTPRICE" control="C_LISTPRICE">
+            <Text><![CDATA[List Price]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_DISCOUNT" control="C_DISCOUNT">
+            <Text><![CDATA[Discount (%)]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_STORED_ARTICLE" control="C_STORED_ARTICLE">
+            <Text><![CDATA[Stored Article]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_PRODUCT_URL" control="C_PRODUCT_URL">
+            <Text><![CDATA[Product URL]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_ACCOUNTREF" control="C_ACCOUNTREF">
+            <Text><![CDATA[Account Reference]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_SECURITY_SHEET" control="C_SECURITY_SHEET">
+            <Text><![CDATA[Security Sheet]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_ENV_CLASSIFICATION" control="C_ENV_CLASSIFICATION">
+            <Text><![CDATA[Environmental Classification]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_XREFERENCE" control="C_XREFERENCE">
+            <Text><![CDATA[Cross Reference]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_SUPPLIER_PRODUCT_CATEGORY2" control="C_SUPPLIER_PRODUCT_CATEGORY2">
+            <Text><![CDATA[Supplier''s Product Category 2]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_STATGROUP" control="C_STATGROUP">
+            <Text><![CDATA[Statistic Group]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_ARTICLE_NAME_SYNONYMS" control="C_ARTICLE_NAME_SYNONYMS">
+            <Text><![CDATA[Part Synonym]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="HostedSuppCatProduct.HOSTED_SUPP_CAT_PRODUCT.C_ENVIRONMENTAL" control="C_ENVIRONMENTAL">
+            <Text><![CDATA[Environmental Details]]></Text>
+         </Resource>
+      </Resource>
+   </TranslatableResource>
+</TranslatableResources>
