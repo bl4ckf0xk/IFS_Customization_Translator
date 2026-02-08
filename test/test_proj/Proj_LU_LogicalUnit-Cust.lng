@@ -14,16 +14,10 @@ CS:ActivityEstimate^LU^Logical Unit^N^N
 		CS:C_ACTUAL_COST^LU^Column^N^N
 			A:Prompt^C Actual Cost^
 		CE:
-		CS:C_ACTUAL_REVENUE^LU^Column^N^N
-			A:Prompt^C Actual Revenue^
-		CE:
 	CE:
 	CS:ACTIVITY_ESTIMATE_MAIN^LU^View^N^N
 		CS:C_ACTUAL_COST^LU^Column^N^N
 			A:Prompt^C Actual Cost^
-		CE:
-		CS:C_ACTUAL_REVENUE^LU^Column^N^N
-			A:Prompt^C Actual Revenue^
 		CE:
 	CE:
 CE:

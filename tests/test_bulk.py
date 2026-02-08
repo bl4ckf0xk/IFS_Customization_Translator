@@ -62,7 +62,7 @@ def test_bulk_run_and_validate(xml_path, test_out_dir):
 ACTIVITY_ESTIMATE_EXPECTED = [
     "Proj_LU_LogicalUnit-Cust.lng",
     "Proj_LU_LogicalUnit-Cust-sv.trs",
-    "Proj_LU_LogicalUnit-Cust-nb.trs",
+    "Proj_LU_LogicalUnit-Cust-no.trs",
 ]
 
 

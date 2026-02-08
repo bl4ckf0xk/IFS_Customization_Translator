@@ -1,12 +1,14 @@
 """
 Tests for dictionary translation backend.
-Verifies that built-in mappings match expected Swedish and Norwegian strings.
+Verifies that built-in and project-folder dictionary mappings match expected Swedish and Norwegian strings.
 """
 
 import pytest
 
 # conftest adds src to path
 from translator import IFSTranslator
+
+from .conftest import REPO_ROOT
 
 
 # Expected mappings from translator.py dictionary (used in reference .trs files)
@@ -27,7 +29,8 @@ EXPECTED_NORWEGIAN = {
 
 @pytest.fixture
 def translator():
-    return IFSTranslator(backend="dictionary")
+    """Use repo dictionary/ so we test file-based loading."""
+    return IFSTranslator(backend="dictionary", dictionary_dir=REPO_ROOT)
 
 
 def test_dictionary_translations_swedish(translator):

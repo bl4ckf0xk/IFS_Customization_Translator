@@ -87,6 +87,9 @@ Language Files Export 2026-02-05 (1)/
 │   ├── translator.py        # AI translation service
 │   ├── validator.py         # File validation
 │   └── logger.py            # Logging utilities
+├── dictionary/              # Optional: project dictionary (JSON per language)
+│   ├── sv-SE.json           # Swedish: {"English Label": "Translated"}
+│   └── nb-NO.json           # Norwegian
 ├── translationDb_*.xml      # Input XML files
 ├── Esspro_LU_*.lng          # Generated language files
 ├── Esspro_LU_*-sv.trs       # Generated Swedish translations
@@ -153,9 +156,14 @@ CE:
 
 ## Translation
 
-The tool includes default translations for common IFS ERP terms in:
-- **Swedish (sv-SE)**: Enterprise-appropriate Swedish terminology
-- **Norwegian (nb-NO)**: Enterprise-appropriate Norwegian Bokmål terminology
+The tool supports multiple backends (dictionary, Groq AI, Google Translate). With the default **dictionary** backend:
+
+- **Project-folder dictionary**: Place a `dictionary/` folder in the **same directory as your XML file**. Add one JSON file per language, e.g. `dictionary/sv-SE.json`, `dictionary/nb-NO.json`. Each file maps English labels to translated labels:
+  ```json
+  {"English Label": "Translated Label", "Another Label": "Another Translation"}
+  ```
+  If the tool finds these files, it uses them for translation. You can copy the default files from the repo’s `dictionary/` folder and edit them.
+- **Fallback**: If no `dictionary/` folder or no file exists for a language, the tool uses built-in terms for Swedish and Norwegian.
 
 Translations maintain:
 - Professional ERP terminology

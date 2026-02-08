@@ -28,7 +28,11 @@ class IFSLanguageAutomation:
         # Initialize components
         self.logger = IFSLogger(self.output_dir / 'Log.txt')
         self.parser = IFSXMLParser(self.xml_path)
-        self.translator = IFSTranslator(backend=translation_backend, api_key=api_key)
+        self.translator = IFSTranslator(
+            backend=translation_backend,
+            api_key=api_key,
+            dictionary_dir=self.xml_path.parent,
+        )
         self.validator = IFSValidator()
         
         # Data storage
@@ -49,17 +53,22 @@ class IFSLanguageAutomation:
             # Step 2: Extract custom fields
             self._extract_custom_fields()
             
-            # Step 3: Generate .lng file
-            self._generate_lng_file()
-            
-            # Step 4: Translate labels
-            self._translate_labels()
-            
-            # Step 5: Generate .trs files
-            self._generate_trs_files()
-            
-            # Step 6: Validate all files
-            self._validate_files()
+            if not self.custom_data['logical_units']:
+                self.logger.info(
+                    f"No custom fields (C_*) in {self.xml_path}; skipping file generation and validation."
+                )
+            else:
+                # Step 3: Generate .lng file
+                self._generate_lng_file()
+                
+                # Step 4: Translate labels
+                self._translate_labels()
+                
+                # Step 5: Generate .trs files
+                self._generate_trs_files()
+                
+                # Step 6: Validate all files
+                self._validate_files()
             
             # Step 7: Write log
             self.logger.info("=" * 60)
@@ -209,8 +218,10 @@ def main():
     
     parser.add_argument(
         '--xml',
+        nargs='+',
         required=True,
-        help='Path to TranslatableResources XML file'
+        metavar='XML',
+        help='Path(s) to TranslatableResources XML file(s). You can pass multiple files or a glob (e.g. test/test_proj/*.xml).'
     )
     
     parser.add_argument(
@@ -247,19 +258,28 @@ def main():
     # Parse languages
     languages = [lang.strip() for lang in args.languages.split(',')]
     
-    # Run automation
-    automation = IFSLanguageAutomation(
-        xml_path=args.xml,
-        output_dir=args.output_dir,
-        languages=languages,
-        translation_backend=args.backend,
-        api_key=args.api_key
-    )
-    
     if args.validate_only:
         print("Validation-only mode not yet implemented")
         sys.exit(1)
-    else:
+    
+    # Only process paths that end with .xml (glob may expand to Log.txt, .lng, .trs, etc.)
+    xml_paths = [p for p in args.xml if str(p).lower().endswith(".xml")]
+    skipped = [p for p in args.xml if p not in xml_paths]
+    if skipped:
+        print(f"[INFO] Skipping non-XML path(s): {', '.join(str(p) for p in skipped)}")
+    if not xml_paths:
+        print("No XML files to process.")
+        return
+    
+    # Run automation for each XML file
+    for xml_path in xml_paths:
+        automation = IFSLanguageAutomation(
+            xml_path=xml_path,
+            output_dir=args.output_dir,
+            languages=languages,
+            translation_backend=args.backend,
+            api_key=args.api_key
+        )
         automation.run()
 
 

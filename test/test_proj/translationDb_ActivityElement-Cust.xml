@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TranslatableResources type="LU" module="PROJ" version="1.0" layer="Cust" xmlns="types.scan.translation.fnd.ifsworld.com">
+   <TranslatableResource type="Logical Unit" ID="ActivityElement" name="ActivityElement">
+      <Text><![CDATA[Activity Element]]></Text>
+      <Resource subtype="View" ID="ActivityElement.ACTIVITY_ELEMENT" control="ACTIVITY_ELEMENT">
+         <Text><![CDATA[Activity Element]]></Text>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTIVITY_SEQ" control="ACTIVITY_SEQ">
+            <Text><![CDATA[Activity Sequence]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PROJECT_COST_ELEMENT" control="PROJECT_COST_ELEMENT">
+            <Text><![CDATA[Project Cost Element]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.CURRENCY_CODE" control="CURRENCY_CODE">
+            <Text><![CDATA[Currency Code]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PROJECT_ID" control="PROJECT_ID">
+            <Text><![CDATA[Project ID]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.MANUAL_PROGRESS_COST" control="MANUAL_PROGRESS_COST">
+            <Text><![CDATA[Manual Progress Cost]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.MANUAL_PROGRESS_HOURS" control="MANUAL_PROGRESS_HOURS">
+            <Text><![CDATA[Manual Progress Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.MANUAL_PROGRESS_TOTAL" control="MANUAL_PROGRESS_TOTAL">
+            <Text><![CDATA[Manual Progress Total]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.BASELINE" control="BASELINE">
+            <Text><![CDATA[Baseline]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.BASELINE_HOURS" control="BASELINE_HOURS">
+            <Text><![CDATA[Baseline Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_COST_BASE" control="ESTIMATED_COST_BASE">
+            <Text><![CDATA[Estimated Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COST_BASE" control="PLANNED_COST_BASE">
+            <Text><![CDATA[Planned Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COMMITTED_BASE" control="PLANNED_COMMITTED_BASE">
+            <Text><![CDATA[Planned Committed Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMMITTED_COST_BASE" control="COMMITTED_COST_BASE">
+            <Text><![CDATA[Committed Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.USED_COST_BASE" control="USED_COST_BASE">
+            <Text><![CDATA[Used Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_COST_BASE" control="ACTUAL_COST_BASE">
+            <Text><![CDATA[Actual Cost Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_COST_PROJECT" control="ESTIMATED_COST_PROJECT">
+            <Text><![CDATA[Estimated Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COST_PROJECT" control="PLANNED_COST_PROJECT">
+            <Text><![CDATA[Planned Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COMMITTED_PROJECT" control="PLANNED_COMMITTED_PROJECT">
+            <Text><![CDATA[Planned Committed Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMMITTED_COST_PROJECT" control="COMMITTED_COST_PROJECT">
+            <Text><![CDATA[Committed Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.USED_COST_PROJECT" control="USED_COST_PROJECT">
+            <Text><![CDATA[Used Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_COST_PROJECT" control="ACTUAL_COST_PROJECT">
+            <Text><![CDATA[Actual Cost Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_COST_TRANS" control="ESTIMATED_COST_TRANS">
+            <Text><![CDATA[Estimated Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COST_TRANS" control="PLANNED_COST_TRANS">
+            <Text><![CDATA[Planned Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COMMITTED_TRANS" control="PLANNED_COMMITTED_TRANS">
+            <Text><![CDATA[Planned Committed Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMMITTED_COST_TRANS" control="COMMITTED_COST_TRANS">
+            <Text><![CDATA[Committed Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.USED_COST_TRANS" control="USED_COST_TRANS">
+            <Text><![CDATA[Used Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_COST_TRANS" control="ACTUAL_COST_TRANS">
+            <Text><![CDATA[Actual Cost Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_COST_BUDGET" control="ESTIMATED_COST_BUDGET">
+            <Text><![CDATA[Estimated Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COST_BUDGET" control="PLANNED_COST_BUDGET">
+            <Text><![CDATA[Planned Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COMMITTED_BUDGET" control="PLANNED_COMMITTED_BUDGET">
+            <Text><![CDATA[Planned Committed Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMMITTED_COST_BUDGET" control="COMMITTED_COST_BUDGET">
+            <Text><![CDATA[Committed Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.USED_COST_BUDGET" control="USED_COST_BUDGET">
+            <Text><![CDATA[Used Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_COST_BUDGET" control="ACTUAL_COST_BUDGET">
+            <Text><![CDATA[Actual Cost Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_HOURS" control="ESTIMATED_HOURS">
+            <Text><![CDATA[Estimated Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_HOURS" control="PLANNED_HOURS">
+            <Text><![CDATA[Planned Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_COMMITTED_HOURS" control="PLANNED_COMMITTED_HOURS">
+            <Text><![CDATA[Planned Committed Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMMITTED_HOURS" control="COMMITTED_HOURS">
+            <Text><![CDATA[Committed Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_HOURS" control="ACTUAL_HOURS">
+            <Text><![CDATA[Actual Hours]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_REVENUE_BASE" control="ESTIMATED_REVENUE_BASE">
+            <Text><![CDATA[Estimated Revenue Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_REVENUE_BASE" control="PLANNED_REVENUE_BASE">
+            <Text><![CDATA[Planned Revenue Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PRELIMINARY_REVENUE_BASE" control="PRELIMINARY_REVENUE_BASE">
+            <Text><![CDATA[Preliminary Revenue Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.POSTED_REVENUE_BASE" control="POSTED_REVENUE_BASE">
+            <Text><![CDATA[Posted Revenue Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_REVENUE_BASE" control="ACTUAL_REVENUE_BASE">
+            <Text><![CDATA[Actual Revenue Base Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_REVENUE_TRANS" control="ESTIMATED_REVENUE_TRANS">
+            <Text><![CDATA[Estimated Revenue Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_REVENUE_TRANS" control="PLANNED_REVENUE_TRANS">
+            <Text><![CDATA[Planned Revenue Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PRELIMINARY_REVENUE_TRANS" control="PRELIMINARY_REVENUE_TRANS">
+            <Text><![CDATA[Preliminary Revenue Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.POSTED_REVENUE_TRANS" control="POSTED_REVENUE_TRANS">
+            <Text><![CDATA[Posted Revenue Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_REVENUE_TRANS" control="ACTUAL_REVENUE_TRANS">
+            <Text><![CDATA[Actual Revenue Transaction Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_REVENUE_PROJECT" control="ESTIMATED_REVENUE_PROJECT">
+            <Text><![CDATA[Estimated Revenue Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_REVENUE_PROJECT" control="PLANNED_REVENUE_PROJECT">
+            <Text><![CDATA[Planned Revenue Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PRELIMINARY_REV_PROJECT" control="PRELIMINARY_REV_PROJECT">
+            <Text><![CDATA[Preliminary Revenue Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.POSTED_REVENUE_PROJECT" control="POSTED_REVENUE_PROJECT">
+            <Text><![CDATA[Posted Revenue Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_REVENUE_PROJECT" control="ACTUAL_REVENUE_PROJECT">
+            <Text><![CDATA[Actual Revenue Project Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ESTIMATED_REVENUE_BUDGET" control="ESTIMATED_REVENUE_BUDGET">
+            <Text><![CDATA[Estimated Revenue Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PLANNED_REVENUE_BUDGET" control="PLANNED_REVENUE_BUDGET">
+            <Text><![CDATA[Planned Revenue Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.PRELIMINARY_REV_BUDGET" control="PRELIMINARY_REV_BUDGET">
+            <Text><![CDATA[Preliminary Revenue Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.POSTED_REVENUE_BUDGET" control="POSTED_REVENUE_BUDGET">
+            <Text><![CDATA[Posted Revenue Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.ACTUAL_REVENUE_BUDGET" control="ACTUAL_REVENUE_BUDGET">
+            <Text><![CDATA[Actual Revenue Budget Currency]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.EV_COST_CALCULATED" control="EV_COST_CALCULATED">
+            <Text><![CDATA[Ev Cost Calculated]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.EV_COST_DIRECT" control="EV_COST_DIRECT">
+            <Text><![CDATA[Ev Cost Direct]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.EV_HOURS_CALCULATED" control="EV_HOURS_CALCULATED">
+            <Text><![CDATA[Ev Hours Calculated]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.EV_HOURS_DIRECT" control="EV_HOURS_DIRECT">
+            <Text><![CDATA[Ev Hours Direct]]></Text>
+         </Resource>
+         <Resource subtype="Column" ID="ActivityElement.ACTIVITY_ELEMENT.COMPANY" control="COMPANY">
+            <Text><![CDATA[Company]]></Text>
+         </Resource>
+      </Resource>
+   </TranslatableResource>
+</TranslatableResources>

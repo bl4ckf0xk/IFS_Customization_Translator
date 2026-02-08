@@ -13,7 +13,7 @@ class TRSGenerator:
     # Language mappings
     LANGUAGES = {
         'sv-SE': {'code': 'sv', 'name': 'Swedish'},
-        'nb-NO': {'code': 'nb', 'name': 'Norwegian'}
+        'nb-NO': {'code': 'no', 'name': 'Norwegian'}
     }
     
     def __init__(self, module: str, layer: str, language: str, main_type: str = "LU", sub_type: str = "Logical Unit"):

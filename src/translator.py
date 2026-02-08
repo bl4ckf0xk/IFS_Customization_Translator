@@ -3,7 +3,8 @@ IFS Translation Service - Enhanced with AI Support
 Supports: Groq (free), Google Translate (free tier), and fallback dictionary
 """
 
-from typing import Dict, List
+from pathlib import Path
+from typing import Dict, List, Optional, Union
 import json
 import os
 
@@ -26,16 +27,20 @@ class IFSTranslator:
         'pl-PL': 'Polish'
     }
     
-    def __init__(self, backend='dictionary', api_key=None):
+    def __init__(self, backend='dictionary', api_key=None, dictionary_dir: Optional[Union[Path, str]] = None):
         """
         Initialize translator with specified backend
         
         Args:
             backend: 'groq', 'google', or 'dictionary' (default)
             api_key: API key for groq or google (optional)
+            dictionary_dir: Optional path to project folder containing dictionary/
+                            (e.g. dictionary/sv-SE.json). If set, dictionary backend
+                            loads from these files; if not set, uses built-in terms.
         """
         self.backend = backend
         self.api_key = api_key or os.getenv('GROQ_API_KEY') or os.getenv('GOOGLE_API_KEY')
+        self.dictionary_dir = Path(dictionary_dir) if dictionary_dir else None
         self.translation_cache = {}
         
         # Try to import backend-specific libraries
@@ -68,7 +73,10 @@ class IFSTranslator:
                 self.backend = 'dictionary'
         
         if self.backend == 'dictionary':
-            print(f"[OK] Using built-in dictionary for translations")
+            if self.dictionary_dir:
+                print(f"[OK] Using project dictionary from {self.dictionary_dir / 'dictionary'}")
+            else:
+                print(f"[OK] Using built-in dictionary for translations")
         
     def translate_batch(self, texts: List[str], target_language: str) -> Dict[str, str]:
         """
@@ -215,11 +223,22 @@ Important rules:
             print("  Falling back to dictionary")
             return self._translate_with_dictionary(texts, target_language)
     
-    def _translate_with_dictionary(self, texts: List[str], target_language: str) -> Dict[str, str]:
-        """
-        Fallback: Use built-in dictionary
-        """
-        # Swedish translations
+    def _load_dictionary_file(self, target_language: str) -> Dict[str, str]:
+        """Load dictionary for a language from project folder. Returns {} if missing or invalid."""
+        if not self.dictionary_dir:
+            return {}
+        path = self.dictionary_dir / "dictionary" / f"{target_language}.json"
+        if not path.exists():
+            return {}
+        try:
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            return data if isinstance(data, dict) else {}
+        except (json.JSONDecodeError, OSError):
+            return {}
+
+    def _get_builtin_terms(self, target_language: str) -> Dict[str, str]:
+        """Return built-in terms for backward compatibility when no dictionary_dir is set."""
         swedish_terms = {
             'Branch No': 'Filialnummer',
             'EAN': 'EAN',
@@ -244,8 +263,6 @@ Important rules:
             'Actual Cost': 'Verklig kostnad',
             'Actual Revenue': 'Verklig intäkt'
         }
-        
-        # Norwegian translations
         norwegian_terms = {
             'Branch No': 'Filialnummer',
             'EAN': 'EAN',
@@ -270,20 +287,26 @@ Important rules:
             'Actual Cost': 'Faktisk kostnad',
             'Actual Revenue': 'Faktisk inntekt'
         }
-        
-        # Select appropriate dictionary
         if target_language == 'sv-SE':
-            term_dict = swedish_terms
-        elif target_language == 'nb-NO':
-            term_dict = norwegian_terms
+            return swedish_terms
+        if target_language == 'nb-NO':
+            return norwegian_terms
+        return {}
+
+    def _translate_with_dictionary(self, texts: List[str], target_language: str) -> Dict[str, str]:
+        """
+        Use dictionary: load from project folder if dictionary_dir is set, else built-in terms.
+        If dictionary_dir is set but no file exists for the language, fall back to built-in.
+        """
+        if self.dictionary_dir:
+            term_dict = self._load_dictionary_file(target_language)
+            if not term_dict:
+                term_dict = self._get_builtin_terms(target_language)
         else:
-            term_dict = {}
-        
-        # Build translations
+            term_dict = self._get_builtin_terms(target_language)
         translations = {}
         for text in texts:
             translations[text] = term_dict.get(text, text)
-        
         return translations
     
     def get_supported_languages(self) -> List[str]:

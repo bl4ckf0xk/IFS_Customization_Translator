@@ -86,13 +86,27 @@ This guide shows you how to use **FREE AI translation** instead of the built-in 
 
 ---
 
-## Option 3: Built-in Dictionary (Default)
+## Option 3: Dictionary (Default)
 
 ### Why Dictionary?
-- ✅ **No Setup** required
+- ✅ **No Setup** required (or use your own term list)
 - ✅ **Offline** - No internet needed
 - ✅ **Instant** - No API calls
-- ⚠️ **Limited** - Only pre-defined terms
+- ⚠️ **Limited** - Only pre-defined or project-defined terms
+
+### Project-folder dictionary
+You can keep all dictionary terms in your project folder. In the **same directory as your XML file**, create a `dictionary/` folder and add one JSON file per language:
+
+- `dictionary/sv-SE.json` – Swedish
+- `dictionary/nb-NO.json` – Norwegian
+
+Each file is a single JSON object mapping English labels to translated labels:
+
+```json
+{"English Label": "Translated Label", "Another Label": "Another Translation"}
+```
+
+The repository includes default `dictionary/sv-SE.json` and `dictionary/nb-NO.json` at the project root; you can copy them next to your XML and edit. If no `dictionary/` folder or file exists for a language, the tool falls back to built-in terms.
 
 ### Usage
 ```bash

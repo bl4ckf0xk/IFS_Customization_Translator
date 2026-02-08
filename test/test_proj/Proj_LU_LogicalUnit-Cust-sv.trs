@@ -16,19 +16,11 @@ CS:ActivityEstimate^LU
 			P:C Actual Cost^
 			A:Prompt^Verklig kostnad^
 		CE:
-		CS:C_ACTUAL_REVENUE^LU
-			P:C Actual Revenue^
-			A:Prompt^Verklig intäkt^
-		CE:
 	CE:
 	CS:ACTIVITY_ESTIMATE_MAIN^LU
 		CS:C_ACTUAL_COST^LU
 			P:C Actual Cost^
 			A:Prompt^Verklig kostnad^
-		CE:
-		CS:C_ACTUAL_REVENUE^LU
-			P:C Actual Revenue^
-			A:Prompt^Verklig intäkt^
 		CE:
 	CE:
 CE:
